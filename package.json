@@ -1,0 +1,52 @@
+{
+  "name": "electron-vue",
+  "version": "0.0.0",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "format": "prettier --write src/",
+    "electron-dev": "cross-env NODE_ENV=development electron .",
+    "electron-build": "vite build && electron-builder"
+  },
+  "dependencies": {
+    "@imengyu/vue3-context-menu": "^1.4.1",
+    "@primevue/themes": "^4.0.0-rc.2",
+    "chokidar": "^3.6.0",
+    "electron-store": "^10.0.0",
+    "lodash": "^4.17.21",
+    "pinia": "^2.1.7",
+    "primevue": "^4.0.0-rc.2",
+    "ps-list": "^8.1.1",
+    "sudo-prompt": "^9.2.1",
+    "systeminformation": "^5.22.11",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0",
+    "ws": "^8.17.1"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.8.0",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "autoprefixer": "^10.4.19",
+    "cross-env": "^7.0.3",
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.23.0",
+    "postcss": "^8.4.38",
+    "prettier": "^3.2.5",
+    "tailwindcss": "^3.4.4",
+    "vite": "^5.2.8"
+  },
+  "build": {
+    "appId": "your.app.id",
+    "productName": "YourAppName",
+    "directories": {
+      "output": "build"
+    }
+  }
+}
